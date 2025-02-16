@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/components/CallControls.css"
+import "../styles/components/callcontrols.css"
 import { MdVideocamOff } from "react-icons/md";
 import { BsFillMicMuteFill } from "react-icons/bs";
 import { IoCallSharp } from "react-icons/io5";

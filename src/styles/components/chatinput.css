@@ -32,12 +32,3 @@
     border: none;
     border-radius: 5px;
 }
-
-.chat_input>button:hover {
-    opacity: 0.6;
-    cursor: pointer;
-}
-
-.chat_input>button:active {
-    opacity: 1;
-}
