@@ -1,6 +1,6 @@
 .message_list {
     width: 100%;
-    height: 533px;
+    height: 568px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -18,6 +18,10 @@
 .message>p {
     background-color: var(--bg-button);
     padding: 12px 12px;
+}
+
+.message:last-child {
+    margin-bottom: 20px;
 }
 
 .received>p {
