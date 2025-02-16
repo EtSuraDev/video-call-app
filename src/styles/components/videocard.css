@@ -1,0 +1,32 @@
+.video_card_container {
+    width: 100%;
+    /* Make it take 70% width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    /* Space between cards */
+}
+
+.video_card {
+    width: 100%;
+    /* Ensure it fills the 70% width set by parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.video_card>img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video_card>p {
+    color: var(--text-muted);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}

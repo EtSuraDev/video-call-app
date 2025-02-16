@@ -1,0 +1,17 @@
+    .video_call_section {
+        width: 67%;
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video_title {
+        display: flex;
+        gap: 10px;
+        color: var(--bg-button);
+        margin-bottom: 14PX;
+    }
+    
+    .video_title>p {
+        color: var(--text-secondary);
+    }

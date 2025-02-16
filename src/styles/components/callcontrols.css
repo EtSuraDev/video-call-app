@@ -1,0 +1,33 @@
+.call_controls {
+    color: var(--text-secondary);
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.call_controls>svg {
+    cursor: pointer;
+}
+
+.call_controls_call {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--call-btn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.call_controls_call:hover {
+    background-color: var(--call-btn-hover);
+}
+
+.call_controls_call:active {
+    background-color: var(--call-btn);
+}

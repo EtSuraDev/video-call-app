@@ -1,0 +1,18 @@
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #161616;
+    --bg-sidebar: #000000;
+    --bg-card: #222222;
+    --bg-chat: #101010;
+    --bg-button: #94f3b6;
+    --bg-button-hover: #1aa34a;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --text-muted: #777777;
+    --text-green: #1db954;
+    --chat-bg-received: #2c2c2c;
+    --border-color: #333333;
+    --box-shadow: rgba(94, 91, 91, 0.2) 0px 4px 12px;
+    --call-btn: red;
+    --call-btn-hover: rgb(226, 49, 49);
+}
