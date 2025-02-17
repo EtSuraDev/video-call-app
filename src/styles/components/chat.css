@@ -8,9 +8,26 @@
     overflow: hidden;
 }
 
+.display_chat {
+    display: none;
+    color: var(--bg-button);
+}
+
 @media (max-width: 900px) {
     .chat_section {
         display: none;
+        position: absolute;
+        background-color: var(--bg-primary);
+        max-width: 400px;
+        width: 90%;
+        left: 6%;
+    }
+    .display_chat {
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 3%;
+        cursor: pointer;
     }
 }
 

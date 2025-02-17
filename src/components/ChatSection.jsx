@@ -4,10 +4,13 @@ import ChatInput from './ChatInput'
 import ChatMessage from './ChatMessage'
 import  { useState } from 'react'
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { AiFillMessage } from "react-icons/ai";
+
 
 
 
 function ChatSection() {
+  const [displayChat, setDisplayChat] = useState("false")
   const [messages, setMessages] = useState( [
     { id: 1, sender: "user", message: "Hi!", timestamp: "15:09" },
     { id: 2, sender: "receiver", message: "Hi!", timestamp: "15:10" },
@@ -52,25 +55,36 @@ function ChatSection() {
     message: "",
 })
   }
+  console.log(displayChat)
+
   return (
-    <div className=' chat_section  '>
-      <div className=' top_chat '>
-        <h3>
-          chat
-        </h3>
-        <div>
-          <BsThreeDotsVertical/>
+    <>
+      {
+        displayChat 
+          &&
+        <div className='display_chat' >
+          <AiFillMessage size={60} onClick={() => setDisplayChat(true)}  />
         </div>
+      }
+      <div className=' chat_section  ' style={{ display: displayChat ? "" : "none"  }} >
+        <div className=' top_chat '>
+          <h3>
+            chat
+          </h3>
+          <div>
+            <BsThreeDotsVertical/>
+          </div>
+        </div>
+          <ChatMessage
+            messages={messages}
+          />
+          <ChatInput 
+            inputValue={inputValue}
+            handleInputChange={handleInputChange}
+            handleSubmit={handleSubmit} 
+          />
       </div>
-        <ChatMessage
-          messages={messages}
-        />
-        <ChatInput 
-          inputValue={inputValue}
-          handleInputChange={handleInputChange}
-          handleSubmit={handleSubmit} 
-        />
-    </div>
+    </>
   )
 }
 
