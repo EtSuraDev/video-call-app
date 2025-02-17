@@ -5,12 +5,15 @@ import ChatMessage from './ChatMessage'
 import  { useState } from 'react'
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
+import { IoMdClose } from "react-icons/io";
+
 
 
 
 
 function ChatSection() {
-  const [displayChat, setDisplayChat] = useState("false")
+  const [displayChat, setDisplayChat] = useState(false)
+  
   const [messages, setMessages] = useState( [
     { id: 1, sender: "user", message: "Hi!", timestamp: "15:09" },
     { id: 2, sender: "receiver", message: "Hi!", timestamp: "15:10" },
@@ -60,20 +63,26 @@ function ChatSection() {
   return (
     <>
       {
-        displayChat 
+        !displayChat 
           &&
         <div className='display_chat' >
           <AiFillMessage size={60} onClick={() => setDisplayChat(true)}  />
         </div>
       }
-      <div className=' chat_section  ' style={{ display: displayChat ? "" : "none"  }} >
+      <div className={`chat_section ${ displayChat ? "display_chat_true" : "display_chat_false"  } `} >
         <div className=' top_chat '>
           <h3>
             chat
           </h3>
-          <div>
-            <BsThreeDotsVertical/>
+          <div style={{display: "flex"}} >
+            <div>
+              <BsThreeDotsVertical/>
+            </div>
+            <div className=' chat_section_close '>
+              <IoMdClose onClick={() => setDisplayChat(false)} />
+            </div>
           </div>
+          
         </div>
           <ChatMessage
             messages={messages}

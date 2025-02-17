@@ -13,6 +13,10 @@
     color: var(--bg-button);
 }
 
+.chat_section_close {
+    display: none;
+}
+
 @media (max-width: 900px) {
     .chat_section {
         display: none;
@@ -28,6 +32,18 @@
         top: 10%;
         right: 3%;
         cursor: pointer;
+    }
+    .display_chat_true {
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+    .display_chat_false {
+        display: none;
+    }
+    .chat_section_close {
+        display: block;
     }
 }
 
