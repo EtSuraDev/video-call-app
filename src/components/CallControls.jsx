@@ -20,9 +20,9 @@ import { FaVolumeXmark } from "react-icons/fa6";
 
 function CallControls() {
   const [call, setCall] = useState(false)
-  const [volume, setVolume] = useState(true)
-  const [mute, setMute] = useState(true)
-  const [shareVideo, setShareVideo] = useState(true)
+  const [volume, setVolume] = useState(false)
+  const [mute, setMute] = useState(false)
+  const [shareVideo, setShareVideo] = useState(false)
 
 
 

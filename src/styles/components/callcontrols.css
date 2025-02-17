@@ -62,3 +62,11 @@
     opacity: 1;
     visibility: visible;
 }
+
+@media (max-width: 550px) {
+    .call_controls {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+    }
+}

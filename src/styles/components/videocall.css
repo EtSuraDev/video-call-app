@@ -22,3 +22,9 @@
             width: 100%;
         }
     }
+    
+    @media (max-width: 500px) {
+        .video_call_section {
+            padding: 0px 4px;
+        }
+    }

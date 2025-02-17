@@ -152,6 +152,14 @@
     }
 }
 
+@media (max-width: 550px) {
+    .side_bar_toggle {
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 .side_bar_toggle>button {
     color: var(--text-secondary);
     background-color: inherit;
