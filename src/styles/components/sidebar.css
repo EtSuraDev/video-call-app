@@ -7,7 +7,12 @@
     max-width: 300px;
     width: 100%;
     padding: 40px 25px;
+    position: relative;
     border-right: 1px solid var(--border-color);
+}
+
+.main_side_bar {
+    height: 100%;
 }
 
 .sidebar__logo {
@@ -65,14 +70,11 @@
 .sidebar__menu-item:hover {
     color: var(--bg-button);
     cursor: pointer;
-}
-
-.sidebar__logout {
-    margin-top: auto;
+    width: fit-content;
 }
 
 .sidebar__logout-btn {
-    width: 95%;
+    width: 90%;
     padding: 12px 14px;
     border: none;
     border-radius: 10px;
@@ -82,6 +84,18 @@
     font-size: 15px;
     background: var(--bg-button);
     margin: auto;
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    cursor: pointer;
+}
+
+.sidebar__logout-btn:hover {
+    opacity: 0.6;
+}
+
+.sidebar__logout-btn:active {
+    opacity: 1;
 }
 
 @media (max-width: 1130px) {
@@ -95,8 +109,51 @@
     }
 }
 
+.side_bar_toggle {
+    display: none;
+}
+
+.hidden_side_bar {
+    display: none;
+    padding: 0px 10px;
+}
+
 @media (max-width: 1000px) {
-    .sidebar {
+    .main_side_bar {
         display: none;
     }
+    .sidebar {
+        padding: 45px 3px;
+        align-items: center;
+        width: fit-content;
+        height: 100%;
+    }
+    .side_bar_toggle {
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sidebar__logo {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+    }
+    .hidden_side_bar {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10000;
+        background-color: var(--bg-sidebar);
+        border-right: 1px solid var(--border-color);
+        height: 100%;
+    }
+}
+
+.side_bar_toggle>button {
+    color: var(--text-secondary);
+    background-color: inherit;
+    border: none;
 }

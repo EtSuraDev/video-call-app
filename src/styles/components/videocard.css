@@ -1,16 +1,14 @@
 .video_card_container {
     width: 100%;
-    /* Make it take 70% width */
+    max-width: 850px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-    /* Space between cards */
 }
 
 .video_card {
     width: 100%;
-    /* Ensure it fills the 70% width set by parent */
     display: flex;
     flex-direction: column;
     align-items: center;

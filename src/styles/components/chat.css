@@ -7,3 +7,22 @@
     position: relative;
     overflow: hidden;
 }
+
+@media (max-width: 900px) {
+    .chat_section {
+        display: none;
+    }
+}
+
+.top_chat {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: var(--bg-primary);
+    z-index: 77777777;
+    color: var(--text-secondary);
+    padding: 8px 8px;
+}

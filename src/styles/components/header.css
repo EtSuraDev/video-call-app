@@ -21,6 +21,7 @@
 .header_second-section {
     display: flex;
     gap: 17px;
+    justify-content: end;
 }
 
 .header__search {
@@ -40,7 +41,20 @@
     color: var(--text-secondary);
     font-size: 16px;
     border: none;
-    padding: 12px 27px;
+    padding: 12px 8px;
+    width: 140px;
+}
+
+@media (max-width: 1000px) {
+    .header__search {
+        width: 40%;
+    }
+}
+
+@media (max-width: 655px) {
+    .header__welcome {
+        font-size: 18px;
+    }
 }
 
 .header__search>input::placeholder {

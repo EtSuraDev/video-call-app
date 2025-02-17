@@ -8,10 +8,6 @@
     margin-top: 20px;
 }
 
-.call_controls>svg {
-    cursor: pointer;
-}
-
 .call_controls_call {
     width: 60px;
     height: 60px;
@@ -30,4 +26,39 @@
 
 .call_controls_call:active {
     background-color: var(--call-btn);
+}
+
+.call_controls>div {
+    cursor: pointer;
+}
+
+.call_controls>div {
+    position: relative;
+}
+
+.call_controls>div::after {
+    content: attr(data-tooltip);
+    /* Tooltip text */
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    /* Move it to the right */
+    transform: translateY(-50%);
+    background-color: var(--text-secondary);
+    color: var(--bg-primary);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+/* Show tooltip when hovering */
+
+.call_controls>div:hover::after {
+    opacity: 1;
+    visibility: visible;
 }

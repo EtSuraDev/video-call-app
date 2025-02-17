@@ -20,7 +20,7 @@ function Header() {
                 <input type="text" class="header__search-input" placeholder="Search" />
             </div>
             <div class="header__icons">
-                <button class=" header__icon--notification">
+                <button class=" header__icon--notification" aria-label="Notifications">
                     <PiBellRingingThin size={ 20 } />
                 </button>
                 <div class="header__profile">

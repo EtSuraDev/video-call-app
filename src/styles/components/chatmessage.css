@@ -18,6 +18,7 @@
 .message>p {
     background-color: var(--bg-button);
     padding: 12px 12px;
+    word-wrap: break-word;
 }
 
 .message:last-child {
