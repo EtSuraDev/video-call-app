@@ -20,24 +20,22 @@
 @media (max-width: 900px) {
     .chat_section {
         display: none;
-        position: absolute;
         background-color: var(--bg-primary);
         max-width: 400px;
-        width: 90%;
-        left: 6%;
+        width: 100%;
     }
     .display_chat {
         display: block;
         position: absolute;
-        top: 10%;
+        top: -4%;
         right: 3%;
         cursor: pointer;
     }
     .display_chat_true {
         display: flex;
-        left: 50%;
-        transform: translateX(-50%);
         position: absolute;
+        right: 0px;
+        bottom: 0px;
     }
     .display_chat_false {
         display: none;

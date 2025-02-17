@@ -1,14 +1,17 @@
 .video_card_container {
     width: 100%;
     max-width: 850px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    position: relative;
 }
 
 .video_card {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +23,7 @@
     height: 260px;
     object-fit: cover;
     border-radius: 10px;
+    position: relative;
 }
 
 .video_card>p {
@@ -27,4 +31,21 @@
     position: absolute;
     bottom: 30px;
     left: 30px;
+}
+
+@media (max-width: 600px) {
+    .video_card:first-child {
+        height: 100%;
+    }
+    .video_card:last-child {
+        position: absolute;
+        width: 150px;
+        height: 230px;
+        top: 0px;
+        right: 0px;
+        z-index: 222222;
+    }
+    .video_card>img {
+        height: 100%;
+    }
 }

@@ -45,6 +45,18 @@
     width: 80%;
 }
 
+@media (max-width: 350px) {
+    .header__search-input {
+        display: none;
+    }
+    .header__search {
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 1000px) {
     .header__search {
         width: 40%;

@@ -49,4 +49,6 @@ body {
 .main_content {
     display: flex;
     justify-content: center;
+    position: relative;
+    height: 90%;
 }
