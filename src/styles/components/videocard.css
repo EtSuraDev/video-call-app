@@ -27,7 +27,7 @@
 }
 
 .video_card>p {
-    color: var(--text-muted);
+    color: var(--bg-primary);
     position: absolute;
     bottom: 30px;
     left: 30px;
@@ -39,11 +39,11 @@
     }
     .video_card:last-child {
         position: absolute;
-        width: 150px;
-        height: 230px;
+        width: 120px;
+        height: 200px;
         top: 0px;
         right: 0px;
-        z-index: 222222;
+        z-index: 50;
     }
     .video_card>img {
         height: 100%;

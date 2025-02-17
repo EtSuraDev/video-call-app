@@ -123,7 +123,7 @@
         display: none;
     }
     .sidebar {
-        padding: 45px 3px;
+        padding: 20px 3px;
         align-items: center;
         width: fit-content;
         height: 100%;
@@ -152,11 +152,18 @@
     }
 }
 
+.side_bar_toggle>button {
+    font-size: 34px;
+}
+
 @media (max-width: 550px) {
     .side_bar_toggle {
         display: flex;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .side_bar_toggle>button {
+        font-size: 24px;
     }
 }
 

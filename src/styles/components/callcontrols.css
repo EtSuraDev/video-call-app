@@ -34,6 +34,7 @@
 
 .call_controls>div {
     position: relative;
+    font-size: 32px;
 }
 
 .call_controls>div::after {
@@ -68,5 +69,11 @@
         display: flex;
         justify-content: space-between;
         gap: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .call_controls>div {
+        font-size: 26px;
     }
 }

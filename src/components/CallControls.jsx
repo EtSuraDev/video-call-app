@@ -31,33 +31,33 @@ function CallControls() {
       <div className=' shareVideo 'data-tooltip={shareVideo ?   "close camera" : "open camera"}>
         {
           shareVideo ?  
-          <IoMdVideocam  size={34} onClick={() => setShareVideo(prev => !prev)} /> : 
-          <MdVideocamOff   size={34} onClick={() => setShareVideo(prev => !prev)}   /> 
+          <IoMdVideocam   onClick={() => setShareVideo(prev => !prev)} /> : 
+          <MdVideocamOff    onClick={() => setShareVideo(prev => !prev)}   /> 
         }
       </div>
       <div data-tooltip={mute ? "mute" : "unmute"}>
         {
           mute ?
-          <MdKeyboardVoice size={38} onClick={() => setMute(prev => !prev)} />:
-          <BsFillMicMuteFill size={34}  onClick={() => setMute(prev => !prev)} />
+          <MdKeyboardVoice  onClick={() => setMute(prev => !prev)} />:
+          <BsFillMicMuteFill   onClick={() => setMute(prev => !prev)} />
         }
         </div>
         
         <div class='call_controls_call'  data-tooltip={call ? "call" : "end call"} >
           {
-            call ?   <MdCallEnd size={34} onClick={() => setCall(prev => !prev)}/> : <IoCallSharp size={34} onClick={() => setCall(prev => !prev)} />
+            call ?   <MdCallEnd  onClick={() => setCall(prev => !prev)}/> : <IoCallSharp  onClick={() => setCall(prev => !prev)} />
           }
             
         </div>
         <div data-tooltip={volume ? "volume on" : "volume off"}>
           {
             volume ?
-            <IoVolumeHigh  size={34} onClick={() => setVolume(prev => !prev)} /> :
-            <FaVolumeXmark size={34} onClick={() => setVolume(prev => !prev)} />
+            <IoVolumeHigh   onClick={() => setVolume(prev => !prev)} /> :
+            <FaVolumeXmark  onClick={() => setVolume(prev => !prev)} />
           }
         </div>
         <div data-tooltip="go">
-          <LuSquareArrowUpRight size={34} />
+          <LuSquareArrowUpRight  />
         </div>
     </div>
   )

@@ -9,7 +9,7 @@
 }
 
 .message {
-    color: var(--text-secondary);
+    color: var(--bg-primary);
     display: flex;
     width: 90%;
     margin: auto;

@@ -119,7 +119,7 @@ function Sidebar() {
             (
                 <div className='side_bar_toggle'>
                     <button  onClick={ () => setViwe(true) } >
-                        <RxHamburgerMenu size={28} />
+                        <RxHamburgerMenu />
                     </button>
                 </div>
                 
