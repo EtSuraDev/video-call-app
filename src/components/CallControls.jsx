@@ -27,7 +27,7 @@ function CallControls() {
 
 
   return (
-    <div class="call_controls">
+    <div className="call_controls">
       <div className=' shareVideo 'data-tooltip={shareVideo ?   "close camera" : "open camera"}>
         {
           shareVideo ?  
@@ -43,7 +43,7 @@ function CallControls() {
         }
         </div>
         
-        <div class='call_controls_call'  data-tooltip={call ? "call" : "end call"} >
+        <div className='call_controls_call'  data-tooltip={call ? "call" : "end call"} >
           {
             call ?   <MdCallEnd  onClick={() => setCall(prev => !prev)}/> : <IoCallSharp  onClick={() => setCall(prev => !prev)} />
           }

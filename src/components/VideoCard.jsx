@@ -4,12 +4,12 @@ import imgOne from '../assets/image.png'
 import imgTow from '../assets/image copy.png'
 function VideoCard() {
   return (
-    <div class=' video_card_container '>
-      <div class="card_one video_card">
+    <div className=' video_card_container '>
+      <div className="card_one video_card">
         <img src={imgOne} alt="" />
         <p>surafel meles</p>
       </div>
-      <div class="card_tow video_card">
+      <div className="card_tow video_card">
         <img src={imgTow} alt="" />
         <p>surafel meles</p>
       </div>

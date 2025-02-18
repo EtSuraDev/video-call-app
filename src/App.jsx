@@ -5,11 +5,11 @@ import VideoCallSection from './components/VideoCallSection';
 import ChatSection from './components/ChatSection';
 function App() {
   return (
-    <div class='container' >
+    <div className='container' >
       <Sidebar/>
       <div className='content' >
         <Header/>
-        <div class=' main_content ' >
+        <div className=' main_content ' >
           <VideoCallSection/>
           <ChatSection/>
         </div>

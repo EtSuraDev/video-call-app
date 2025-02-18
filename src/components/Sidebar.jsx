@@ -25,7 +25,7 @@ function Sidebar() {
       
         <div className=' main_side_bar '>
               <div className="sidebar__logo">
-                <img src="./public/assets/logo.svg" alt="" />
+                <img src="../assets/logo.svg" alt="" />
             </div>
             <div className='sidebar_input' >
                 <CiSearch size={ 23 } />

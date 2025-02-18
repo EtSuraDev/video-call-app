@@ -11,7 +11,7 @@ function ChatInput(props) {
         value={props.inputValue.message}
         onChange={props.handleInputChange}
       />
-      <button class='buttons'
+      <button className='buttons'
         onClick={() => props.handleSubmit()}
       >
         <RiTelegram2Fill size={40} />
